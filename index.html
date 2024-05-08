@@ -20,7 +20,6 @@
     window.onload = function() {
         document.getElementById('comanda').innerHTML = comanda;
         document.getElementById('fecha').innerHTML = fecha;
-        document.getElementById('total').innerHTML = total;
         // Mostrar cada línea del resumen en un párrafo separado
         lineasResumen.forEach(function(linea) {
             var parrafo = document.createElement('p');
@@ -35,9 +34,9 @@
         <h2>Detalles del Pedido</h2>
         <p><strong>Comanda:</strong> <span id="comanda"></span></p>
         <p><strong>Fecha:</strong> <span id="fecha"></span></p>
+        <p><strong>total:</strong> <span id="total"></span></p>
         
         <h3>Resumen del Pedido:</h3>
         <div id="resumen"></div><br>
-        <div id="Total"></div>
     </div>
 </body>
