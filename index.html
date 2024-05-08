@@ -10,7 +10,7 @@
     // Obtener los parámetros de la URL
     var comanda = obtenerParametro('COMANDA');
     var fecha = obtenerParametro('FECHA');
-    var resumen = obtenerParametro('PRINT_PRODUCTOS');
+    var resumen = obtenerParametro('resumen');
 
     // Convertir la cadena resumen en un array separado por saltos de línea
     var lineasResumen = resumen.split('\n');
@@ -23,7 +23,7 @@
         lineasResumen.forEach(function(linea) {
             var parrafo = document.createElement('p');
             parrafo.innerHTML = linea;
-            document.getElementById('PRINT_PRODUCTOS').appendChild(parrafo);
+            document.getElementById('resumen').appendChild(parrafo);
         });
     };
 </script>
