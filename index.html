@@ -11,7 +11,8 @@
     var comanda = obtenerParametro('COMANDA');
     var fecha = obtenerParametro('FECHA');
     var resumen = obtenerParametro('resumen');
-
+    var resumen = obtenerParametro('total');
+    
     // Convertir la cadena resumen en un array separado por saltos de línea
     var lineasResumen = resumen.split('\n');
 
@@ -36,4 +37,5 @@
         <h3>Resumen del Pedido:</h3>
         <div id="resumen"></div>
     </div>
+<p><strong>Comanda:</strong> <span id="total"></span></p>
 </body>
