@@ -11,7 +11,7 @@
     var comanda = obtenerParametro('COMANDA');
     var fecha = obtenerParametro('FECHA');
     var resumen = obtenerParametro('resumen');
-    var total = obtenerParametro('Total');
+    var total = obtenerParametro('total');
     
     // Convertir la cadena resumen en un array separado por saltos de línea
     var lineasResumen = resumen.split('\n');
@@ -20,6 +20,7 @@
     window.onload = function() {
         document.getElementById('comanda').innerHTML = comanda;
         document.getElementById('fecha').innerHTML = fecha;
+        document.getElementById('total').innerHTML = total;
         // Mostrar cada línea del resumen en un párrafo separado
         lineasResumen.forEach(function(linea) {
             var parrafo = document.createElement('p');
