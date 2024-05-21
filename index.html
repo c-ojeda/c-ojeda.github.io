@@ -26,11 +26,12 @@
         document.getElementById('comanda').innerHTML = comanda;
         document.getElementById('fecha').innerHTML = fecha;
         document.getElementById('total').innerHTML = total;
+        
         // Mostrar cada línea del resumen en un párrafo separado
         lineasResumen.forEach(function(linea) {
             var parrafo = document.createElement('p');
             parrafo.innerHTML = linea;
-            document.getElementById('resumen').value;
+            document.getElementById('resumen')appendChild(parrafo);
         });
     };
 </script>
@@ -38,7 +39,7 @@
 <body>
     <div>
         <h2>Detalles del Pedido</h2>
-        <p><strong>Comanda:</strong> <span id="comanda"></span></p>
+        <p><strong>Comanda:</strong> <span id="comanda"></span><br>
         <p><strong>Fecha:</strong> <span id="fecha"></span></p>
         
         
