@@ -32,6 +32,7 @@
             var parrafo = document.createElement('p');
             parrafo.innerHTML = linea;
             document.getElementById('resumen')appendChild(parrafo);
+            document.replace(/(\r\n|\n|\r)/gm, "")
         });
     };
 </script>
